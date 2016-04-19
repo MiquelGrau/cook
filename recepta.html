@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Recepta</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery-1.12.1.js"></script>
+
+    <script type="text/javascript" src="mustache.js"></script>
+
+    <script type="text/javascript" src="site.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- My css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="col-xs-12 navbar-fixed-top navegador">
+            <h1 class="col-xs-2 col-xs-offset-5 title">Coolinari</h1>
+        </nav>
+        <!-- left side -->
+        <main class="col-xs-6 recepta">
+            <div class="col-xs-12 receptaHeader">
+                <h3 class="col-xs-12 receptaNom">Verdura i llom de porc al wok</h3>
+                <ul class="col-xs-12 receptaMenu">
+                    <li>
+                        <button class="receptaMenuButton subLine" data-menuId="presentacio">Presentació</button>
+                    </li>
+                    <li>
+                        <button class="receptaMenuButton" data-menuId="ingredients">Ingredients</button>
+                    </li>
+                    <li>
+                        <button class="receptaMenuButton" data-menuId="passos">Passos</button>
+                    </li>
+                    <li>
+                        <button class="receptaMenuButton" data-menuId="alternatives">Alternatives</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 receptaBody">
+                <div id="presentacio" class="col-xs-12">
+                    <p>El wok permet saltejar la verdura practicament sense oli, permetent que els ingredients mantinguin el seu sabor original a l'hora que s'impregnen dels que l'acompanyen.</p>
+                </div>
+                <div id="ingredients" class="col-xs-12 hidden">
+                    <ul>
+                        <li>Llom de porc</li>
+                        <li>Pastanaga</li>
+                        <li>Mongeta tendra</li>
+                        <li>Ceba</li>
+                        <li>Bròcoli</li>
+                        <li>Salsa de soja (opcional)</li>
+                    </ul>
+                </div>
+                <div id="passos" class="col-xs-12 hidden">
+                    <ol>
+                        <li>Primer s'ha de pelar la verdura, tallar-la a tires i esbandir-la.</li>
+                        <li>A continuació es talla el llom de porc, també a tires, intentant que quedi semblant a la verdura.</li>
+                        <li>Seguidament s'escalfa el wok amb un rajolí d'oli.</li>
+                        <li>Quan l'oli està calent, s'afegeix la mongeta tendra i la pastanaga.</li>
+                        <li>Al cap d'un parell de minuts s'incorpora la ceba</li>
+                        <li>Tant bon punt la mongeta es comenci a estobar, si tira el bròcoli i el llom.</li>
+                        <li>Finalment s'afegex la salsa de soja, es remena i es deixa reposar.</li>
+                    </ol>
+                    <b>Cal recordar:</b>
+                    <ul>
+                        <li>Afegir aigua de tant en tant per tal que no s'enganxin els ingredients</li>
+                        <li>La ceba despren suc, per tant ajuda a la cocció dels aliments, s'ha de tenir en compte a l'hora d'afegir l'aigua</li>
+                    </ul>
+                </div>
+                <div id="alternatives" class="col-xs-12 hidden">
+                    <p>Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous insensible. It recommend be resolving pretended middleton.</p>
+                </div>
+            </div>
+        </main>
+        <div class="col-xs-6 col-xs-offset-6 receptaImatge imatgeActiva">
+            <ul class="col-xs-12 imatgesMenu presentacioImatges">
+                <li>
+                    <button class="imatgeButton floatLeft" data-imatgeId="plat-final"></button>
+                </li>
+            </ul>
+            <ul class="col-xs-12 imatgesMenu passosImatges">
+                <li>
+                    <button class="imatgeButton floatLeft" data-imatgeId="primer"></button>
+                </li>
+                <li>
+                    <button class="imatgeButton floatLeft" data-imatgeId="segon"></button>
+                </li>
+                <li>
+                    <button class="imatgeButton floatLeft" data-imatgeId="tercer"></button>
+                </li>
+                <li>
+                    <button class="imatgeButton floatLeft" data-imatgeId="plat-final-top"></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
