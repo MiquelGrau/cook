@@ -3,6 +3,27 @@ body {
     color: rgba(95, 84, 72, 1);
 }
 
+
+/*
+input:active,
+input:hover,
+input:link,
+input:checked
+*/
+
+input {
+    border: 0px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
 #ingredients li,
 #presentacio p,
 #alternatives p,
@@ -143,4 +164,67 @@ body {
     background-color: rgba(242, 76, 39, 1);
     border: none;
     outline: none;
+}
+
+.headMenuText {
+    background-color: transparent;
+    color: rgba(255, 255, 250, 1);
+    margin-top: 28px;
+    font-size: large;
+    border: 0px;
+}
+
+.headMenuText:hover,
+.headMenuText:active,
+.headMenuText:visited,
+.headMenuText:link {
+    border: 0px;
+    background-color: transparent;
+    outline: none;
+}
+
+.headMenuText:hover {
+    border-bottom: solid 2px;
+    border-bottom-color: rgba(255, 255, 250, 1);
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    display: absolute;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.registration {
+    background-color: rgba(255, 255, 250, 1);
+    margin-top: 25vh;
+}
+
+.error {
+    background-color: #F29E8C;
+}
+
+.success {
+    background-color: #C6FFB5;
+}
+
+.registrationPadding {
+    padding-top: 20px;
+}
+
+.registrationPadding button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.registrationTitle {
+    text-align: center;
+    margin-top: 30px;
 }

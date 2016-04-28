@@ -8,12 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- jQuery -->
     <script type="text/javascript" src="jquery-1.12.1.js"></script>
-
-    <script type="text/javascript" src="mustache.js"></script>
-
-    <script type="text/javascript" src="site.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -27,9 +22,36 @@
 </head>
 
 <body>
+    <div class="container">
+        <div id="popup" class="hidden">
+            <div class="col-xs-6 col-xs-offset-3 registration">
+                <h1 class="col-xs-6 registrationTitle">Registration</h1>
+                <form class="col-xs-12">
+                    <div class="col-xs-10 col-xs-offset-1 registrationPadding">
+                        <label class="col-xs-12" for="email">E-mail:</label>
+                        <div class="col-xs-12">
+                            <input type="email" id="email" class="col-xs-12" aria-describedby="introduceyouremail" placeholder="Introduce your email" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 registrationPadding">
+                        <label class="col-xs-12" for="pw">Password:</label>
+                        <div class="col-xs-12">
+                            <input type="password" id="pw" class="col-xs-12" aria-describedby="introduceyourpassword" placeholder="Between 3 and 15 characters" pattern=".{3,15}" required>
+                            <!--                    <span id="pw" class="sr-only">(success)</span>-->
+                        </div>
+                    </div>
+                    <div class="col-xs-12 registrationPadding">
+                        <button id="clickMe" class="col-xs-3 col-xs-offset-2">Register</button>
+                        <button class="col-xs-3 col-xs-offset-2">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <nav class="col-xs-12 navbar-fixed-top navegador">
             <h1 class="col-xs-2 col-xs-offset-5 title">Coolinari</h1>
+            <input type="button" class="col-xs-2 col-xs-offset-3 receptaMenuButton headMenuText" value="Sign In / Sign Up" data-titleId="popup" />
         </nav>
         <!-- left side -->
         <main class="col-xs-6 recepta">
@@ -107,6 +129,13 @@
             </ul>
         </div>
     </div>
+    <footer>
+        <!-- jQuery -->
+        <script type="text/javascript" src="mustache.js"></script>
+        <script type="text/javascript" src="register.js"></script>
+        <script type="text/javascript" src="site.js"></script>
+
+    </footer>
 </body>
 
 </html>

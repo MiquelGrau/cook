@@ -12,6 +12,7 @@ $(function () {
         $(this).addClass('subLine');
         $(this).parent().siblings().children().removeClass('subLine');
     });
+
     // cambia d'imatge
     $('.imatgeButton').on('click', function () {
         var actiu = $(this).attr('data-imatgeId');
@@ -22,6 +23,7 @@ $(function () {
         $(this).parent().siblings().children().addClass('imatgeButton');
         $(this).parent().siblings().children().removeClass('orangeButton');
     });
+
     $('.receptaMenuButton').on('click', function () {
         var group = $(this).attr('data-menuId');
         var groupClass = ('.' + group + 'Imatges li');
@@ -33,6 +35,12 @@ $(function () {
             'margin-right': (margin - 25)
         });
     });
+
+    $('.headMenuText').on('click', function () {
+        var gran = $(this).attr('data-titleId');
+        $('#' + gran).removeClass('hidden');
+    });
+
     $(document).ready(function () {
         var contador = $('.presentacioImatges').size();
         var amplitut = $(window).width();
